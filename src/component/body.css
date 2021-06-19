@@ -1,0 +1,29 @@
+.card{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.card .title{
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.card Button{
+    background: rgba(255,255,255,0.5);
+    color: #61CE70;
+    border: none;
+    padding:0 !important;
+    font-size: 12px;
+}
+.card Button:hover{
+    background: rgba(255,255,255,0.5);
+    color: #61CE70;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+.link:hover {
+    color: black;
+}

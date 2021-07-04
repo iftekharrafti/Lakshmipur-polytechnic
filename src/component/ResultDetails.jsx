@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import ResultFullDetails  from './ResultFullDetails';
 import Result from './Result';
 
-
 class ResultDetails extends Component{
-
     state = {
         results:[
             {title:"২য় পর্ব সমাপনী পরীক্ষার ফলাফল প্রকাশিত হয়েছে", subTitle:"ইলেকট্রিক্যাল টেকনোলজি, কম্পিউটার  টেকনোলজি, ইলেকট্রনিক্স টেকনোলজি, সিভিল টেকনোলজি ও  এইডিটির", images:"assets/images/exam.jpg"}
@@ -23,10 +21,12 @@ class ResultDetails extends Component{
 
         const results = this.state.results.map(result => {
             return(
-                <Result 
+                <div >
+                    <Result 
                 result={result} 
                 showResult={()=>this.showResult(result)}
                 />
+                </div>
 
             )
         })
@@ -58,9 +58,10 @@ class ResultDetails extends Component{
                     </div>
                 </div>
 
-                <div className="container">
+                <div  className="container">
                     <ResultFullDetails showResult={this.state.showResult} />
                 </div>
+                {/* <Route path="/detail" exact render={() => <ResultFullDetails showResult={this.result.showResult}/>} /> */}
                 
             </div>
         )

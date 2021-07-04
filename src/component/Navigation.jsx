@@ -38,6 +38,9 @@ class Navigation extends Component {
                                 <NavItem>
                                     <Link to="/routine">Routine</Link>
                                 </NavItem>
+                                <NavItem>
+                                    <Link to="/contact">Contact</Link>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                         

@@ -5,19 +5,21 @@ import {Link} from 'react-router-dom';
 import './body.css';
 
 const Result = props => {
+    console.log(props);
     return(
         <div>
             <Card className="card">
             <CardImg src={props.result.images} />
                 <CardBody>
-                    <Link to="/detail" className="link">
-                        <CardTitle onClick={props.showResult} className="title">{props.result.title}</CardTitle>
+                    <Link  className="link">
+                        <CardTitle onClick={props.showResult} as={Link} to ="/users" className="title">{props.result.title}</CardTitle>
                     </Link>
                     <CardText>{new Date().toDateString()}</CardText>
                     <CardSubtitle>{props.result.subTitle}</CardSubtitle>
                     <Button>Read More&gt;&gt;</Button>
                 </CardBody>
             </Card>
+            
         </div>
     )
 }
